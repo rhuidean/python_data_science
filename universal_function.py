@@ -18,3 +18,10 @@ x=np.arange(4)
 print x
 print("x /2 =",x/2)
 print("x //2 =",x//2)
+
+x=np.arange(1,6)
+print x
+
+print np.add.reduce(x)
+print np.multiply.reduce(x)
+print np.multiply.accumulate(x)
