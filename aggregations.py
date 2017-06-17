@@ -58,3 +58,4 @@ bronze = [9, 10, 5, 12, 9, 5, 2, 1, 5, 7, 1, 2, 2, 6, 2, 4, 3, 1, 2, 1, 0, 6, 2,
 # print np.dot(df,points)
 
 
+### Broadcasting
