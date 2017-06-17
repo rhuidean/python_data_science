@@ -1,14 +1,20 @@
+import timeit
 import numpy as np
 np.random.seed(0)
 
+
 def compute_reciprocals(values):
-	### create a output bucket
 	output = np.empty(len(values))
 
-	### populate the bucket np array
 	for i in range(len(values)):
 		output[i] = 1.0/ values[i]
 	return output
 
-values = np.random.randint(1,10,size=5)
-print compute_reciprocals(values)
+
+big_array = np.random.randint(1,10,size=50)
+print timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
+
+x=np.arange(4)
+print x
+print("x /2 =",x/2)
+print("x //2 =",x//2)
