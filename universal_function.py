@@ -25,3 +25,13 @@ print x
 print np.add.reduce(x)
 print np.multiply.reduce(x)
 print np.multiply.accumulate(x)
+
+''' advanced ufunc features '''
+x = np.arange(5)
+y = np.empty(5)
+np.multiply(x,10, out=y)
+print y
+
+y = np.zeros(10)
+np.power(2,x,out=y[::2])
+print y
