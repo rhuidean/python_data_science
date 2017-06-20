@@ -35,3 +35,10 @@ print y
 y = np.zeros(10)
 np.power(2,x,out=y[::2])
 print y
+
+''' Aggregations '''
+L = np.random.random(100)
+print sum(L)
+print np.sum(L)
+print "{} {}".format(min(L),max(L))
+print "{} {}".format(np.min(L),np.max(L))
