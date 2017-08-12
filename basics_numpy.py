@@ -7,9 +7,31 @@ print [type(item) for item in L3]
 
 import numpy as np
 
-# integer array:
+# integer array
 print np.array([1,4,2,5,3])
 print np.array([1,4,2,5,3],dtype='float32')
 
 # multi-dimensional array vs list one-dimensional array
-print np.array([range(i,i+3) for i in [2,4,6]])
+print "range {}".format(np.array([range(i,i+3) for i in [2,4,6]]))
+print "arange {}".format(np.arange(10))
+print "arange {}".format(np.arange(0,20,2))
+print "linspace {}".format(np.linspace(0,20,10))
+ 
+# zeros array
+print np.zeros(10,dtype=int)
+
+# random
+print np.random.random((3,3))
+print np.random.random(6)
+print np.random.randint(0,10,(3,3))
+print np.random.normal(0,1,3)
+
+
+# NumPy Array Attributes
+x1 = np.random.random(size=(3,3))
+print "ndim, shape, size, dtype, itemsize {} {} {} {} {}".format(x1.ndim,x1.shape,x1.size,x1.dtype,x1.itemsize)
+
+# Array Indexing Front & Back
+print x1[2][0]
+print x1[-2][-1]
+
