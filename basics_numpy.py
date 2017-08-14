@@ -35,3 +35,22 @@ print "ndim, shape, size, dtype, itemsize {} {} {} {} {}".format(x1.ndim,x1.shap
 print x1[2][0]
 print x1[-2][-1]
 
+print x1[2][1] 
+x1[2][1]=0.2
+print x1[2][1]
+
+# Array Slicing
+x2 = np.arange(10)
+print x2[5:]
+print x2[4:7]
+print x2[1::2]
+print x2[5::-1]
+print x2[::-1]
+
+# ReShaping Arrays
+grid = np.arange(1,10).reshape((3,3))
+
+
+
+
+
