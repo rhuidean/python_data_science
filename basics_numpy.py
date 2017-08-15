@@ -50,7 +50,12 @@ print x2[::-1]
 # ReShaping Arrays
 grid = np.arange(1,10).reshape((3,3))
 
-
+# Concatentation and Splitting
+x = np.array([1,2,3])
+grid = np.array([[9,8,7],[6,5,4]])
+print np.vstack([x,grid])
+y =np.array([[1],[1]])
+print np.hstack([grid,y])
 
 
 
